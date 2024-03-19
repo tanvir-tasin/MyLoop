@@ -1,16 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.myloop.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane prefHeight="615.0" prefWidth="1085.0" styleClass="root" stylesheets="@stylish.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myloop.HelloController">
+   <children>
+      <AnchorPane layoutY="126.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="364.0" prefWidth="1091.0" style="-fx-background-color: #1690F8;" stylesheets="@stylish.css">
+         <children>
+            <ImageView fitHeight="364.0" fitWidth="1091.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="18.0" layoutY="136.0" prefHeight="31.0" prefWidth="226.0" text="Don't have an account?" textFill="#080707">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="53.0" layoutY="182.0" mnemonicParsing="false" onAction="#opensignup" prefHeight="31.0" prefWidth="78.0" text="SignUp">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="22.0" layoutY="27.0" prefHeight="59.0" prefWidth="217.0" text="Welcome to MyLoop.&#10;Life is easy here&#10;" textFill="#fefffe">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="848.0" layoutY="27.0" prefHeight="59.0" prefWidth="217.0" text="Welcome to MyLoop.&#10;Life is easy here&#10;" textFill="#fefffe">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="848.0" layoutY="136.0" prefHeight="31.0" prefWidth="226.0" text="Already have account?" textFill="#040303">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="867.0" layoutY="182.0" mnemonicParsing="false" onAction="#opensignin" prefHeight="31.0" prefWidth="78.0" stylesheets="@stylish.css" text="Sign In">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <VBox fx:id="vbox" layoutX="39.0" layoutY="-45.0" prefHeight="454.0" prefWidth="399.0" styleClass="vbox" stylesheets="@stylish.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

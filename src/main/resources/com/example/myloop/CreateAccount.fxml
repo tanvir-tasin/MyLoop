@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="399.0" style="-fx-background-color: #121523;" styleClass="blue_vbox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myloop.HelloController">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label text="Sign Up" textFill="#00bbff">
+                    <font>
+                        <Font name="System Bold" size="27.0" />
+                    </font>
+                    <padding>
+                        <Insets left="15.0" right="20.0" top="60.0" />
+                    </padding>
+                    <HBox.margin>
+                        <Insets top="20.0" />
+                    </HBox.margin>
+                </Label>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../../../MyLoop/MyLoop/src/main/resources/hash.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="-30.0" top="40.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="391.0" styleClass="tf_box">
+            <VBox.margin>
+                <Insets top="20.0" />
+            </VBox.margin>
+            <children>
+                <TextField fx:id="NewName" prefHeight="26.0" prefWidth="323.0" promptText="Full name" HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                </TextField>
+                <FontAwesomeIcon fill="#0aaed7" glyphName="USER" size="1.5em">
+                    <HBox.margin>
+                        <Insets left="5.0" right="25.0" top="5.0" />
+                    </HBox.margin>
+                </FontAwesomeIcon>
+            </children>
+        </HBox>
+        <HBox prefHeight="40.0" prefWidth="391.0">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <children>
+                <TextField fx:id="Newemail" prefHeight="29.0" prefWidth="326.0" promptText="Enter email">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                    </HBox.margin>
+                </TextField>
+                <FontAwesomeIcon fill="#19b7d3" glyphName="HOME" selectionFill="#11bde8" size="1.5em">
+                    <HBox.margin>
+                        <Insets left="10.0" right="22.0" top="15.0" />
+                    </HBox.margin>
+                </FontAwesomeIcon>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="159.0" prefHeight="46.0" prefWidth="391.0" styleClass="tf_box">
+            <children>
+                <PasswordField fx:id="Newpass1" prefHeight="29.0" prefWidth="337.0" promptText="Set password" HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                </PasswordField>
+                <FontAwesomeIcon fill="#19b7d3" glyphName="LOCK" selectionFill="#11bde8" size="1.5em">
+                    <HBox.margin>
+                        <Insets left="5.0" right="25.0" top="5.0" />
+                    </HBox.margin>
+                </FontAwesomeIcon>
+            </children>
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox>
+            <children>
+                <PasswordField fx:id="Newpass2" prefHeight="30.0" prefWidth="314.0" promptText="Reset password">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="7.0" />
+                    </HBox.margin>
+                </PasswordField>
+                <FontAwesomeIcon fill="#19b7d3" glyphName="LOCK" selectionFill="#11bde8" size="1.5em">
+                    <HBox.margin>
+                        <Insets left="7.0" right="24.0" top="15.0" />
+                    </HBox.margin>
+                </FontAwesomeIcon>
+            </children>
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS">
+            <VBox.margin>
+                <Insets left="50.0" right="25.0" top="15.0" />
+            </VBox.margin>
+            <children>
+                <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="253.0" styleClass="blue_btn" stylesheets="@stylish.css" text="Sign In">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+      <Text fx:id="text2" fill="#f9f7f7" strokeType="OUTSIDE" strokeWidth="0.0">
+         <VBox.margin>
+            <Insets bottom="20.0" left="120.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+    </children>
+</VBox>
