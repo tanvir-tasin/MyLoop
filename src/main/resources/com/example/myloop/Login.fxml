@@ -20,18 +20,18 @@
                 <Insets />
             </VBox.margin>
             <children>
-                <Label text="Log In" textFill="#c8e812">
+                <Label text="LogIn" textFill="#c8e812">
                     <font>
                         <Font name="System Bold" size="27.0" />
                     </font>
                     <HBox.margin>
-                        <Insets top="20.0" />
+                        <Insets top="10.0" />
                     </HBox.margin>
                <padding>
                   <Insets left="15.0" right="20.0" top="60.0" />
                </padding>
                 </Label>
-                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="114.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                     <HBox.margin>
                         <Insets left="-30.0" top="40.0" />
                     </HBox.margin>
@@ -51,7 +51,7 @@
                         <Insets left="20.0" right="20.0" />
                     </HBox.margin>
                     <font>
-                        <Font name="System Bold Italic" size="12.0" />
+                        <Font name="System Bold Italic" size="14.0" />
                     </font>
                 </TextField>
                 <FontAwesomeIcon fill="#0aaed7" glyphName="USER" size="1.5em">
@@ -68,7 +68,7 @@
                         <Insets left="20.0" right="20.0" />
                     </HBox.margin>
                     <font>
-                        <Font name="System Bold Italic" size="12.0" />
+                        <Font name="System Bold Italic" size="14.0" />
                     </font>
                 </PasswordField>
                 <FontAwesomeIcon fill="#19b7d3" glyphName="LOCK" selectionFill="#11bde8" size="1.5em">
@@ -81,20 +81,20 @@
                 <Insets top="10.0" />
             </VBox.margin>
         </HBox>
-        <Button fx:id="LogIn" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="253.0" styleClass="blue_btn" stylesheets="@stylish.css" text="Log In" VBox.vgrow="ALWAYS">
+        <Button fx:id="LogIn" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="253.0" styleClass="blue_btn" stylesheets="@stylish.css" text="LogIn" VBox.vgrow="ALWAYS">
             <VBox.margin>
-                <Insets left="50.0" right="25.0" top="15.0" />
+                <Insets left="70.0" right="25.0" top="30.0" />
             </VBox.margin>
             <font>
-                <Font name="System Bold Italic" size="12.0" />
+                <Font name="System Bold" size="20.0" />
             </font>
         </Button>
-      <Text fx:id="wrongPass" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.0">
+      <Text fx:id="wrongPass" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="200.0">
          <VBox.margin>
             <Insets left="100.0" top="40.0" />
          </VBox.margin>
          <font>
-            <Font name="System Bold" size="17.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
       </Text>
     </children>

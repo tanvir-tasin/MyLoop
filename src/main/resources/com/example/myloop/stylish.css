@@ -10,7 +10,7 @@
     -fx-text-fill: whitesmoke;
 }
 .vbox{
-    -fx-background-color: #fffff;
+    -fx-background-color: #ffff;
 }
 .tf_box{
     -fx-background-color: transparent;
@@ -18,7 +18,7 @@
     -fx-border-width: 0px 0px 1px 0px;
 }
 .tf{
-    -fx-background-color: #fffff;
+    -fx-background-color: #ffff;
 }
 .blue_btn{
     -fx-background-color: #2196f3;

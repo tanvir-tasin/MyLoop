@@ -72,6 +72,7 @@ int count=0;
                     }
                 }
         );
+
     }
     @FXML
     private void opensignin(ActionEvent event)
@@ -155,32 +156,50 @@ int count=0;
 
 
     }
-    public void Signin(ActionEvent e) throws ClassNotFoundException, SQLException, IOException {
+    @FXML
+    public void Signin(ActionEvent event) throws ClassNotFoundException, SQLException, IOException {
         String emailCheck = Newemail.getText();
         String passCheck = Newpass1.getText();
         String Name = NewName.getText();
         String passReCheck = Newpass2.getText();
-        PreparedStatement pstmt = null;
-        Connection conn=null;
+
         if(passCheck.equals(passReCheck)) {
 
 
 
          Class.forName("com.mysql.cj.jdbc.Driver");
-         conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/myloop", "root", "tasin#mysql");
+            Connection  conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/myloop", "root", "tasin#mysql");
 
             String query1 = "INSERT INTO userinfo (Name, email, password) VALUES (?, ?, ?)";
-            pstmt = conn.prepareStatement(query1);
+            PreparedStatement  pstmt = conn.prepareStatement(query1);
             pstmt.setString(1, Name);
             pstmt.setString(2, emailCheck);
             pstmt.setString(3, passCheck);
             pstmt.executeUpdate();
 
-        if (pstmt != null)
-            pstmt.close();
 
-        if (conn != null)
-            conn.close();
+            TranslateTransition t=new TranslateTransition(Duration.seconds(1),vbox);
+            t.setToX(vbox.getLayoutX()*15);
+            t.play();
+            t.setOnFinished((e)->{
+                        try {
+                            fxml= FXMLLoader.load(getClass().getResource("Login.fxml"));
+                            vbox.getChildren().removeAll();
+                            vbox.getChildren().setAll(fxml);
+
+                        }
+                        catch (IOException ex)
+                        {
+                            ex.printStackTrace();
+                        }
+                    }
+            );
+            Newpass1.clear();
+            Newpass2.clear();
+            Newemail.clear();
+            NewName.clear();
+            passMissMatch.setText("Account Created Successfully");
+
     }
 
 
@@ -192,5 +211,6 @@ int count=0;
          Newpass2.clear();
          passMissMatch.setText("Password doesn't match");
      }
+
 
 }}
