@@ -26,3 +26,15 @@
     -fx-text-fill: #ffff;
 
 }
+.background{
+    -fx-background-color: #059862;
+}
+.background1{
+    -fx-background-color: #515151;
+}
+.backgroundtrans{
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+
+    -fx-border-color: transparent;
+}

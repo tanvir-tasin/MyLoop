@@ -120,7 +120,7 @@
                 <Insets left="50.0" right="25.0" top="15.0" />
             </VBox.margin>
             <children>
-                <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="253.0" styleClass="blue_btn" stylesheets="@stylish.css" text="Sign In">
+                <Button fx:id="SignIn" mnemonicParsing="false" onAction="#Signin" prefHeight="36.0" prefWidth="253.0" styleClass="blue_btn" stylesheets="@stylish.css" text="Sign In">
                     <font>
                         <Font name="System Bold Italic" size="12.0" />
                     </font>
@@ -130,12 +130,12 @@
                 </Button>
             </children>
         </HBox>
-      <Text fx:id="text2" fill="#f9f7f7" strokeType="OUTSIDE" strokeWidth="0.0">
+      <Text fx:id="passMissMatch" fill="#f9f7f7" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.0">
          <VBox.margin>
             <Insets bottom="20.0" left="120.0" />
          </VBox.margin>
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Text>
     </children>

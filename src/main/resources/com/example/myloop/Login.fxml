@@ -46,7 +46,7 @@
                 <Insets top="20.0" />
             </VBox.margin>
             <children>
-                <TextField fx:id="lName" prefHeight="26.0" prefWidth="324.0" promptText="Email" HBox.hgrow="ALWAYS">
+                <TextField fx:id="email" prefHeight="26.0" prefWidth="324.0" promptText="Email" HBox.hgrow="ALWAYS">
                     <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                     </HBox.margin>
@@ -63,7 +63,7 @@
         </HBox>
         <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="159.0" prefHeight="46.0" prefWidth="391.0" styleClass="tf_box">
             <children>
-                <PasswordField fx:id="lpass" prefHeight="26.0" prefWidth="324.0" promptText="Password" HBox.hgrow="ALWAYS">
+                <PasswordField fx:id="password" prefHeight="26.0" prefWidth="324.0" promptText="Password" HBox.hgrow="ALWAYS">
                     <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                     </HBox.margin>
@@ -81,7 +81,7 @@
                 <Insets top="10.0" />
             </VBox.margin>
         </HBox>
-        <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="253.0" styleClass="blue_btn" stylesheets="@stylish.css" text="Log In" VBox.vgrow="ALWAYS">
+        <Button fx:id="LogIn" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="253.0" styleClass="blue_btn" stylesheets="@stylish.css" text="Log In" VBox.vgrow="ALWAYS">
             <VBox.margin>
                 <Insets left="50.0" right="25.0" top="15.0" />
             </VBox.margin>
@@ -89,12 +89,12 @@
                 <Font name="System Bold Italic" size="12.0" />
             </font>
         </Button>
-      <Text fx:id="text1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+      <Text fx:id="wrongPass" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.0">
          <VBox.margin>
-            <Insets left="120.0" top="20.0" />
+            <Insets left="100.0" top="40.0" />
          </VBox.margin>
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Text>
     </children>
